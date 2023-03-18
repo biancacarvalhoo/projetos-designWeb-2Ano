@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+ 
+:root {
+    --soft-blue: #8bacda;
+    --cyan: #00fff7;
+    --transparent-cyan: rgba(0, 255, 247, 0.5); 
+    --blue-main: #0d192b;
+    --blue-card: #14253d;
+    --blue-line: #2f415b;
+}
+
+/* transformação do rem em 10px */
+html{
+    font-size: 62.5%;
+}
+
+body {
+    background:var(--blue-main);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*vh -> vai usar o tamanho da tela disponivel
+    display: flex -> pro elememto pai */
+}
+
+section {
+    background: var(--blue-card);
+    width: 35rem; 
+    padding: 2.4rem;
+    border-radius: 1.5rem;
+
+}
+
+.equilibrium {
+    width: 30.2rem;
+    height: 30.2rem;
+    margin-bottom: 2.4rem;
+}
+
+.equilibrium img {
+    width: 100%;
+    border-radius: 0.5rem;  
+}
+
+.description {
+    margin-bottom: 2.4rem;
+}
+
+.description h1{
+    font-size: 2.2rem;
+    color: #fff;
+    margin-bottom: 1.6rem;
+}
+
+.description p {
+    font-size: 1.8rem;
+    color: var(--soft-blue);
+    font-weight: 300;
+     /*font-weight -> intensidade da fonte  */
+}
+
+.info {
+    margin-bottom: 2.4rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ethereum img {
+    width: 1.2rem;
+    height: 1.8rem;
+    margin-right: 0.8rem;
+}
+
+.ethereum p {
+    font-size: 1.6rem;
+    color: var(--cyan);
+    font-weight: 600;
+}
+
+.ethereum, .time, .creator {
+    display: flex;
+    align-items: center;
+}
+
+.time img {
+    width: 1.6rem;
+    height: 1.6rem; 
+    margin-right: 0.8rem;   
+}
+
+.time p {
+    font-size: 1.6rem;
+    color: var(--soft-blue);
+}
+
+.creator {
+    margin-top: 1.6rem;
+}
+
+.creator img {
+    width: 3.4rem;
+    margin-right: 1.6rem;
+    border: 0.1rem solid #fff;
+    border-radius: 50%;
+}
+
+.creator p {
+    font-size: 1.6rem;
+    color: var(--soft-blue);
+}
+
+.creator span {
+    color: #FFF;
+}
